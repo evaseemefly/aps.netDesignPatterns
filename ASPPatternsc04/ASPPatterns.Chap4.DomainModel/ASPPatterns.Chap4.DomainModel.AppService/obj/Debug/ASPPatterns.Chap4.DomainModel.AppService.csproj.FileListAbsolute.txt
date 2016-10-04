@@ -1,0 +1,18 @@
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.AppService.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.AppService.pdb
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Model.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Repository.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Repository.pdb
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Model.pdb
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ASPPatterns.Chap4.DomainModel.AppService.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ASPPatterns.Chap4.DomainModel.AppService.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.AppService.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.AppService.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Model.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Repository.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Model.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\bin\Debug\ASPPatterns.Chap4.DomainModel.Repository.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ASPPatterns.Chap4.DomainModel.AppService.csprojResolveAssemblyReference.cache
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ASPPatterns.Chap4.DomainModel.AppService.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.DomainModel\ASPPatterns.Chap4.DomainModel.AppService\obj\Debug\ASPPatterns.Chap4.DomainModel.AppService.pdb

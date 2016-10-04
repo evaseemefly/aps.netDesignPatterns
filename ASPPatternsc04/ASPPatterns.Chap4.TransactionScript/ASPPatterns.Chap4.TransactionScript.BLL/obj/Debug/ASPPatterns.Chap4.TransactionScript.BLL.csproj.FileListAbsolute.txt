@@ -1,0 +1,10 @@
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\bin\Debug\ASPPatterns.Chap4.TransactionScript.BLL.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\bin\Debug\ASPPatterns.Chap4.TransactionScript.BLL.pdb
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ASPPatterns.Chap4.TransactionScript.BLL.dll
+C:\Projects\Wrox ASP.NET Design Patterns\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ASPPatterns.Chap4.TransactionScript.BLL.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\bin\Debug\ASPPatterns.Chap4.TransactionScript.BLL.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\bin\Debug\ASPPatterns.Chap4.TransactionScript.BLL.pdb
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ASPPatterns.Chap4.TransactionScript.BLL.csprojResolveAssemblyReference.cache
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ASPPatterns.Chap4.TransactionScript.BLL.dll
+D:\02编程\2016年\01协同开发\别人的一些源码\asp.net设计模式源码\ASPPatternsc04\ASPPatterns.Chap4.TransactionScript\ASPPatterns.Chap4.TransactionScript.BLL\obj\Debug\ASPPatterns.Chap4.TransactionScript.BLL.pdb
