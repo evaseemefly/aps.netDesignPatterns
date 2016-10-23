@@ -15,29 +15,29 @@
       <Field Name="_orderState" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderCanceledState" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="3" Width="2" />
+  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderCanceledState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="3.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEQAAAAAAAAAAAAAAAAACAAACAAAAAAAAAAAQ=</HashCode>
       <FileName>OrderStates\OrderCanceledState.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderShippedState" BaseTypeListCollapsed="true">
+  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderShippedState" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="3.25" Y="3" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEQAAAAAAAAAAAAAAAAACAAACAAAAAAAAAAAQ=</HashCode>
       <FileName>OrderStates\OrderShippedState.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderNewState" BaseTypeListCollapsed="true">
-    <Position X="5.5" Y="3" Width="2" />
+  <Class Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.OrderNewState" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="4.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEQAAAAAAAAAAAAAAAAACAAACAAAAAAAAAAAQ=</HashCode>
       <FileName>OrderStates\OrderNewState.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="ASPPatterns.Chap5.StatePattern.Model.OrderStates.IOrderState">
     <Position X="3.5" Y="0.75" Width="1.5" />

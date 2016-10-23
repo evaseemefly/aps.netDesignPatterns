@@ -7,11 +7,6 @@ namespace ASPPatterns.Chap5.TemplateMethodPattern.Model
 {
     public static class ReturnProcessFactory
     {
-        /// <summary>
-        /// 根据枚举类型创建对应的退货类
-        /// </summary>
-        /// <param name="ReturnAction"></param>
-        /// <returns></returns>
         public static ReturnProcessTemplate CreateFrom(ReturnAction ReturnAction)
         {
             switch (ReturnAction)

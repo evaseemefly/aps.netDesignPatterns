@@ -48,10 +48,6 @@ namespace ASPPatterns.Chap5.StatePattern.Model
                 _orderState.Ship(this);
         }
 
-        /// <summary>
-        /// Order类的核心是这个方法，通过这个方法实现根据传入的某接口的 实现类来改变当前类中的实现类的方式！！
-        /// </summary>
-        /// <param name="OrderState"></param>
         internal void Change(IOrderState OrderState)
         {
             _orderState = OrderState;

@@ -1,17 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap5.StatePattern.Model", "ASPPatterns.Chap5.StatePattern.Model\ASPPatterns.Chap5.StatePattern.Model.csproj", "{525B023B-858C-4B9C-996E-82A27C11E3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap5.StatePattern.Tests", "ASPPatterns.Chap5.StatePattern.Tests\ASPPatterns.Chap5.StatePattern.Tests.csproj", "{32D98692-11E5-4569-8BA7-6052185431BA}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{0BD5EA1E-DC75-4834-8687-6DC6805FF782}"
 	ProjectSection(SolutionItems) = preProject
 		Lib\Moq.dll = Lib\Moq.dll
 		Lib\nunit.framework.dll = Lib\nunit.framework.dll
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap5.StatePattern.Model", "ASPPatterns.Chap5.StatePattern.Model\ASPPatterns.Chap5.StatePattern.Model.csproj", "{525B023B-858C-4B9C-996E-82A27C11E3B1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap5.StatePattern.Tests", "ASPPatterns.Chap5.StatePattern.Tests\ASPPatterns.Chap5.StatePattern.Tests.csproj", "{32D98692-11E5-4569-8BA7-6052185431BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

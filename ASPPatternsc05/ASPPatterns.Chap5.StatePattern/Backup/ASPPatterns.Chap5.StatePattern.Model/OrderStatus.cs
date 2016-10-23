@@ -5,9 +5,6 @@ using System.Text;
 
 namespace ASPPatterns.Chap5.StatePattern.Model
 {
-    /// <summary>
-    /// 订单所处的状态
-    /// </summary>
     public enum OrderStatus
     {
        New = 0,
