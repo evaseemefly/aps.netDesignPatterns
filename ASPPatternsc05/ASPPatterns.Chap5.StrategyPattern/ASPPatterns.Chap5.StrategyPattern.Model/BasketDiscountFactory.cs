@@ -7,6 +7,11 @@ namespace ASPPatterns.Chap5.StrategyPattern.Model
 {
     public class BasketDiscountFactory
     {
+        /// <summary>
+        /// 折扣
+        /// </summary>
+        /// <param name="DiscountType"></param>
+        /// <returns></returns>
         public static IBasketDiscountStrategy GetDiscount(DiscountType DiscountType)
         {
             switch (DiscountType)

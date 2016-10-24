@@ -42,7 +42,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="ASPPatterns.Chap5.StrategyPattern.Model.IBasketDiscountStrategy">
-    <Position X="5.25" Y="1" Width="2.5" />
+    <Position X="5.25" Y="1" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>IBasketDiscountStrategy.cs</FileName>

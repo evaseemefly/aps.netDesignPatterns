@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ASPPatterns.Chap5.StrategyPattern.Model
 {
+    /// <summary>
+    /// 满足价格即可打折
+    /// </summary>
     public class BasketDiscountMoneyOff : IBasketDiscountStrategy 
     {
         public decimal GetTotalCostAfterApplyingDiscountTo(Basket basket)
