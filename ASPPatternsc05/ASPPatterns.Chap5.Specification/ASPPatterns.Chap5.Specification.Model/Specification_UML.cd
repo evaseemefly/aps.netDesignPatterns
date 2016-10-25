@@ -28,22 +28,22 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ASPPatterns.Chap5.Specification.Model.HasReachedRentalThresholdSpecification" Collapsed="true">
+  <Class Name="ASPPatterns.Chap5.Specification.Model.HasReachedRentalThresholdSpecification">
     <Position X="1" Y="3" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>HasReachedRentalThresholdSpecification.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ASPPatterns.Chap5.Specification.Model.CustomerAccountHasLateFeesSpecification" Collapsed="true">
+  <Class Name="ASPPatterns.Chap5.Specification.Model.CustomerAccountHasLateFeesSpecification">
     <Position X="4.5" Y="3" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>CustomerAccountHasLateFeesSpecification.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ASPPatterns.Chap5.Specification.Model.CustomerAccountStillActiveSpecification" Collapsed="true">
-    <Position X="2.75" Y="4" Width="3" />
+  <Class Name="ASPPatterns.Chap5.Specification.Model.CustomerAccountStillActiveSpecification">
+    <Position X="2.75" Y="5.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>CustomerAccountStillActiveSpecification.cs</FileName>

@@ -5,8 +5,14 @@ using System.Text;
 
 namespace ASPPatterns.Chap5.Specification.Model
 {
+    /// <summary>
+    /// 客户账户
+    /// </summary>
     public class CustomerAccount
     {
+        /// <summary>
+        /// 已达到租赁阈值
+        /// </summary>
         private ISpecification<CustomerAccount> _hasReachedRentalThreshold;
         private ISpecification<CustomerAccount> _customerAccountIsActive;
         private ISpecification<CustomerAccount> _customerAccountHasLateFees;
