@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ASPPatterns.Chap5.LiskovSubstitutionPrinciple
 {
+    /// <summary>
+    /// 退款请求
+    /// </summary>
     public class RefundRequest
     {
         public PaymentType Payment { get; set; }

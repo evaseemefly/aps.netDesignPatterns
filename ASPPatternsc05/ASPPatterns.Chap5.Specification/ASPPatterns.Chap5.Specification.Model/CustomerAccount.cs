@@ -25,9 +25,14 @@ namespace ASPPatterns.Chap5.Specification.Model
         }
 
         public decimal NumberOfRentalsThisMonth { get; set; }
-
+        /// <summary>
+        /// 账号是否受到限制
+        /// </summary>
         public bool AccountActive { get; set; }
 
+        /// <summary>
+        /// 欠费总费用
+        /// </summary>
         public decimal LateFees { get; set; }
 
         public bool CanRent()

@@ -7,6 +7,11 @@ namespace ASPPatterns.Chap5.LiskovSubstitutionPrinciple
 {
     public class RefundService
     {
+        /// <summary>
+        /// 退款
+        /// </summary>
+        /// <param name="refundRequest"></param>
+        /// <returns></returns>
         public RefundResponse Refund(RefundRequest refundRequest)
         {
             PaymentServiceBase paymentService = PaymentServiceFactory.GetPaymentServiceFrom(refundRequest.Payment);

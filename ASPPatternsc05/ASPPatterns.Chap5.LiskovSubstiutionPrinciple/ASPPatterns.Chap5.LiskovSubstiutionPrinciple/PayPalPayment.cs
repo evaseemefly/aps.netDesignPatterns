@@ -21,8 +21,10 @@ namespace ASPPatterns.Chap5.LiskovSubstitutionPrinciple
             MockPayPalWebService payPalWebService = new MockPayPalWebService();
             RefundResponse refundResponse = new RefundResponse();
 
+            //获得令牌
             string token = payPalWebService.ObtainToken(AccountName, Password);
 
+            //退款
             string response = payPalWebService.MakeRefund(amount, transactionId, token);
 
             refundResponse.Message = response;
