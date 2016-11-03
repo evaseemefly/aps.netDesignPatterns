@@ -32,20 +32,22 @@ namespace ASPPatterns.Chap6.EventTickets.Service
 
             try
             {
-                Event Event = _eventRepository.FindBy(new Guid(reserveTicketRequest.EventId));
+                Event my_Event = _eventRepository.FindBy(new Guid(reserveTicketRequest.EventId));
                 TicketReservation reservation;
-
-                if (Event.CanReserveTicket(reserveTicketRequest.TicketQuantity)   )
+                //判断是否有传入的请求中所要求的预定票数
+                if (my_Event.CanReserveTicket(reserveTicketRequest.TicketQuantity)   )
                 {
-                    reservation = Event.ReserveTicket(reserveTicketRequest.TicketQuantity);
-                    _eventRepository.Save(Event);
+                    //预定指定数量的门票
+                    reservation = my_Event.ReserveTicket(reserveTicketRequest.TicketQuantity);
+                    _eventRepository.Save(my_Event);
+                    //获取预定门票响应
                     response = reservation.ConvertToReserveTicketResponse();
                     response.Success = true;
                 }
                 else                
                 {
                     response.Success = false;
-                    response.Message = String.Format("There are {0} ticket(s) available.", Event.AvailableAllocation());             
+                    response.Message = String.Format("There are {0} ticket(s) available.", my_Event.AvailableAllocation());             
                 }
                
             }

@@ -7,6 +7,9 @@ using ASPPatterns.Chap6.EventTickets.Model;
 
 namespace ASPPatterns.Chap6.EventTickets.Service
 {
+    /// <summary>
+    /// 购票拓展方法
+    /// </summary>
     public static class TicketPurchaseExtensionMethods
     {
         public static PurchaseTicketResponse ConvertToPurchaseTicketResponse(this TicketPurchase ticketPurchase)
