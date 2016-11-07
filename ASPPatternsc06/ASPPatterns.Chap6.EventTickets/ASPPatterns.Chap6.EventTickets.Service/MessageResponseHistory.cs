@@ -5,6 +5,10 @@ using System.Text;
 
 namespace ASPPatterns.Chap6.EventTickets.Service
 {
+    /// <summary>
+    /// 保存响应的字典操作类
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class MessageResponseHistory<T>
     {
         /// <summary>

@@ -159,6 +159,7 @@ namespace ASPPatterns.Chap6.EventTickets.Model
             if (!CanReserveTicket(tktQty))
                 ThrowExceptionWithDetailsOnWhyTicketsCannotBeReserved();
 
+            //订票
             TicketReservation reservation = TicketReservationFactory.CreateReservation(this, tktQty);
            
             ReservedTickets.Add(reservation);  

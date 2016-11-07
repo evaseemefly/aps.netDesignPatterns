@@ -9,6 +9,11 @@ namespace ASPPatterns.Chap6.EventTickets.Service
 {
     public static class TicketReservationExtensionMethods
     {
+        /// <summary>
+        /// 根据传入的 预定门票 对象 返回订票响应
+        /// </summary>
+        /// <param name="ticketReservation"></param>
+        /// <returns></returns>
         public static ReserveTicketResponse ConvertToReserveTicketResponse(this TicketReservation ticketReservation)
         {
             ReserveTicketResponse response = new ReserveTicketResponse();

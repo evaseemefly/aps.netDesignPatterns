@@ -7,6 +7,9 @@ using System.Runtime.Serialization;
 
 namespace ASPPatterns.Chap6.EventTickets.DataContract
 {
+    /// <summary>
+    /// 购票响应
+    /// </summary>
     [DataContract]
     public class PurchaseTicketResponse : Response 
     {
