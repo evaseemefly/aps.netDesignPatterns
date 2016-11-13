@@ -9,6 +9,7 @@ namespace ASPPatterns.Chap6.EventTickets.WebShop
     /// <summary>
     /// NOTE: This is not production code. 
     /// This is merely a class to act as a Basket to demonstrate SOA
+    /// 购物车
     /// and Messaging Patterns.
     /// </summary>
     public class Basket

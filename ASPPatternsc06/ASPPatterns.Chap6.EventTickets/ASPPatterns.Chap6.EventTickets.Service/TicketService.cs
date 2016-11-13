@@ -21,7 +21,7 @@ namespace ASPPatterns.Chap6.EventTickets.Service
         private IEventRepository _eventRepository;
 
         /// <summary>
-        /// 
+        /// 保存服务响应到字典中
         /// </summary>
         private static MessageResponseHistory<PurchaseTicketResponse> _reservationResponse = new MessageResponseHistory<PurchaseTicketResponse>();
         
@@ -44,12 +44,13 @@ namespace ASPPatterns.Chap6.EventTickets.Service
 
             try
             {
+                //1 检索与请求的赛事相关的赛事
                 Event my_Event = _eventRepository.FindBy(new Guid(reserveTicketRequest.EventId));
                 TicketReservation reservation;
-                //判断是否有传入的请求中所要求的预定票数
+                //2 判断是否有传入的请求中所要求的预定票数
                 if (my_Event.CanReserveTicket(reserveTicketRequest.TicketQuantity)   )
                 {
-                    //预定指定数量的门票
+                    //2.1 预定指定数量的门票
                     reservation = my_Event.ReserveTicket(reserveTicketRequest.TicketQuantity);
                     _eventRepository.Save(my_Event);
                     //获取预定门票响应
@@ -86,6 +87,7 @@ namespace ASPPatterns.Chap6.EventTickets.Service
                 // Check for a duplicate transaction using the Idempotent Pattern,
                 // the Domain Logic could cope but we can't be sure.
                 //判断该请求在字典仓储中是否唯一
+                //1 即判断
                 if (_reservationResponse.IsAUniqueRequest(PurchaseTicketRequest.CorrelationId))
                 {                
                     TicketPurchase ticket;

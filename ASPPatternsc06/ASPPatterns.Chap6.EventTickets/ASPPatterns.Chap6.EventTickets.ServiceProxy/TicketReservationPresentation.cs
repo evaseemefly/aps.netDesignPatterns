@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ASPPatterns.Chap6.EventTickets.ServiceProxy
 {
+    /// <summary>
+    /// 预定票描述
+    /// </summary>
     public class TicketReservationPresentation 
     {
         public string EventId { get; set; }
