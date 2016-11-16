@@ -1,0 +1,31 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="75E0A50D-090D-48C6-9A81-2AE702C7C197/d:Repositories/f:BookRepository.cs" caret="297" fromTop="3" />
+      <File id="75E0A50D-090D-48C6-9A81-2AE702C7C197/f:EFUnitOfWork.cs" caret="430" fromTop="9" />
+      <File id="75E0A50D-090D-48C6-9A81-2AE702C7C197/f:DataContextFactory.cs" caret="681" fromTop="17" />
+      <File id="75E0A50D-090D-48C6-9A81-2AE702C7C197/f:Library.edmx" caret="1356" fromTop="15" />
+      <File id="75E0A50D-090D-48C6-9A81-2AE702C7C197/f:LibraryDataContext.cs" caret="770" fromTop="15" />
+      <File id="5C97F267-90E3-4970-B639-5C34E1BFE25D/f:IAggregateRoot.cs" caret="0" fromTop="0" />
+      <File id="48F099D8-35C0-42A1-A892-23B6441F8A86/f:LibraryService.cs" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
