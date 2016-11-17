@@ -8,6 +8,9 @@ namespace ASPPatterns.Chap7.UnitOfWork.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork 
     {
+        /// <summary>
+        /// 
+        /// </summary>
         private Dictionary<IAggregateRoot, IUnitOfWorkRepository> addedEntities;
         private Dictionary<IAggregateRoot, IUnitOfWorkRepository> changedEntities;
         private Dictionary<IAggregateRoot, IUnitOfWorkRepository> deletedEntities;

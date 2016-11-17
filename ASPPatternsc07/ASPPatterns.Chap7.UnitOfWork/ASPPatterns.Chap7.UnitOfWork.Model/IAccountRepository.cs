@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ASPPatterns.Chap7.UnitOfWork.Model
 {
+    /// <summary>
+    /// 账户仓储
+    /// </summary>
     public interface IAccountRepository
     {
         void Save(Account account);
