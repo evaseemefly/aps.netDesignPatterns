@@ -7,6 +7,7 @@ namespace ASPPatterns.Chap7.UnitOfWork.Infrastructure
 {
     /// <summary>
     /// 工作单元接口
+    /// 寄存器 1 修改 2 新增 3 删除 4 接受
     /// </summary>
     public interface IUnitOfWork
     {

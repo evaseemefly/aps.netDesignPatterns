@@ -7,6 +7,9 @@ using ASPPatterns.Chap7.UnitOfWork.Infrastructure;
 
 namespace ASPPatterns.Chap7.UnitOfWork.Repository
 {
+    /// <summary>
+    /// 账户仓储
+    /// </summary>
     public class AccountRepository : IAccountRepository, IUnitOfWorkRepository 
     {
         private IUnitOfWork _unitOfWork;

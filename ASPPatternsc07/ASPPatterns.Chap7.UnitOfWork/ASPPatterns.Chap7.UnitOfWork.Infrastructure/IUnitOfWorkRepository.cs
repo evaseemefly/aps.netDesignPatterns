@@ -7,6 +7,7 @@ namespace ASPPatterns.Chap7.UnitOfWork.Infrastructure
 {
     /// <summary>
     /// 工作单元仓储接口
+    /// 与持久化有关的操作
     /// </summary>
     public interface IUnitOfWorkRepository
     {

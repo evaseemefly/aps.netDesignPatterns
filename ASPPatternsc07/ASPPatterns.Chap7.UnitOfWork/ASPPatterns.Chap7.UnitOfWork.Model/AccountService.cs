@@ -11,6 +11,11 @@ namespace ASPPatterns.Chap7.UnitOfWork.Model
         private IAccountRepository _accountRepository;
         private IUnitOfWork _unitOfWork;
        
+        /// <summary>
+        /// 构造函数为 1 账户仓储 及 2 工作单元 实例化
+        /// </summary>
+        /// <param name="accountRepository"></param>
+        /// <param name="unitOfWork"></param>
         public AccountService(IAccountRepository accountRepository,
                               IUnitOfWork unitOfWork)
         {
