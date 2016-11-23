@@ -15,7 +15,14 @@ namespace ASPPatterns.Chap6.EventTickets.Service
          AspNetCompatibilityRequirementsMode.Allowed)]
     public class TicketService : ITicketService 
     {
+        /// <summary>
+        /// 事件仓储接口
+        /// </summary>
         private IEventRepository _eventRepository;
+
+        /// <summary>
+        /// 保存服务响应到字典中
+        /// </summary>
         private static MessageResponseHistory<PurchaseTicketResponse> _reservationResponse = new MessageResponseHistory<PurchaseTicketResponse>();
         
         public TicketService(IEventRepository eventRepository)
@@ -26,26 +33,34 @@ namespace ASPPatterns.Chap6.EventTickets.Service
         public TicketService() : this (new EventRepository()) // Poor mans DI
         { }
 
+        /// <summary>
+        /// 订票
+        /// </summary>
+        /// <param name="reserveTicketRequest">订票请求</param>
+        /// <returns></returns>
         public ReserveTicketResponse ReserveTicket(ReserveTicketRequest reserveTicketRequest)
         {           
             ReserveTicketResponse response = new ReserveTicketResponse();
 
             try
             {
-                Event Event = _eventRepository.FindBy(new Guid(reserveTicketRequest.EventId));
+                //1 检索与请求的赛事相关的赛事
+                Event my_Event = _eventRepository.FindBy(new Guid(reserveTicketRequest.EventId));
                 TicketReservation reservation;
-
-                if (Event.CanReserveTicket(reserveTicketRequest.TicketQuantity)   )
+                //2 判断是否有传入的请求中所要求的预定票数
+                if (my_Event.CanReserveTicket(reserveTicketRequest.TicketQuantity)   )
                 {
-                    reservation = Event.ReserveTicket(reserveTicketRequest.TicketQuantity);
-                    _eventRepository.Save(Event);
+                    //2.1 预定指定数量的门票
+                    reservation = my_Event.ReserveTicket(reserveTicketRequest.TicketQuantity);
+                    _eventRepository.Save(my_Event);
+                    //获取预定门票响应
                     response = reservation.ConvertToReserveTicketResponse();
                     response.Success = true;
                 }
                 else                
                 {
                     response.Success = false;
-                    response.Message = String.Format("There are {0} ticket(s) available.", Event.AvailableAllocation());             
+                    response.Message = String.Format("There are {0} ticket(s) available.", my_Event.AvailableAllocation());             
                 }
                
             }
@@ -58,6 +73,11 @@ namespace ASPPatterns.Chap6.EventTickets.Service
             return response;
         }
 
+        /// <summary>
+        /// 购票
+        /// </summary>
+        /// <param name="PurchaseTicketRequest">购票请求</param>
+        /// <returns></returns>
         public PurchaseTicketResponse PurchaseTicket(PurchaseTicketRequest PurchaseTicketRequest)
         {
             PurchaseTicketResponse response = new PurchaseTicketResponse();
@@ -66,23 +86,28 @@ namespace ASPPatterns.Chap6.EventTickets.Service
             {
                 // Check for a duplicate transaction using the Idempotent Pattern,
                 // the Domain Logic could cope but we can't be sure.
+                //判断该请求在字典仓储中是否唯一
+                //1 即判断
                 if (_reservationResponse.IsAUniqueRequest(PurchaseTicketRequest.CorrelationId))
                 {                
                     TicketPurchase ticket;
-                    Event Event = _eventRepository.FindBy(new Guid(PurchaseTicketRequest.EventId));
+                    //找到指定的事件
+                    Event my_event = _eventRepository.FindBy(new Guid(PurchaseTicketRequest.EventId));
 
-                    if (Event.CanPurchaseTicketWith(new Guid(PurchaseTicketRequest.ReservationId)))
+                    //判断该票是否已经预定
+                    if (my_event.CanPurchaseTicketWith(new Guid(PurchaseTicketRequest.ReservationId)))
                     {
-                        ticket = Event.PurchaseTicketWith(new Guid(PurchaseTicketRequest.ReservationId));
-
-                        _eventRepository.Save(Event);
+                        //根据购票id购票
+                        ticket = my_event.PurchaseTicketWith(new Guid(PurchaseTicketRequest.ReservationId));
+                        //保存事件
+                        _eventRepository.Save(my_event);
 
                         response = ticket.ConvertToPurchaseTicketResponse();
                         response.Success = true;
                     }
                     else
                     {
-                        response.Message = Event.DetermineWhyATicketCannotbePurchasedWith(new Guid(PurchaseTicketRequest.ReservationId));
+                        response.Message = my_event.DetermineWhyATicketCannotbePurchasedWith(new Guid(PurchaseTicketRequest.ReservationId));
                         response.Success = false;
                     }
                    

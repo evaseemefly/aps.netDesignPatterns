@@ -16,10 +16,18 @@ namespace ASPPatterns.Chap6.EventTickets.ServiceProxy
             _ticketService = ticketService;
         }      
 
+        /// <summary>
+        /// 获取票务描述
+        /// </summary>
+        /// <param name="EventId"></param>
+        /// <param name="NoOfTkts"></param>
+        /// <returns></returns>
         public TicketReservationPresentation ReserveTicketsFor(string EventId, int NoOfTkts)
         {
             TicketReservationPresentation reservation = new TicketReservationPresentation();
+            //订票响应
             ReserveTicketResponse response = new ReserveTicketResponse();
+            //订票请求
             ReserveTicketRequest request = new ReserveTicketRequest();
 
             request.EventId = EventId;
@@ -44,6 +52,12 @@ namespace ASPPatterns.Chap6.EventTickets.ServiceProxy
             return reservation;
         }
 
+        /// <summary>
+        /// 购买已经预定的票
+        /// </summary>
+        /// <param name="EventId"></param>
+        /// <param name="ReservationId"></param>
+        /// <returns></returns>
         public TicketPresentation PurchaseReservedTicket(string EventId, string ReservationId)
         {
             TicketPresentation ticket = new TicketPresentation();

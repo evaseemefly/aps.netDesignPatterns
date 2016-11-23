@@ -8,6 +8,9 @@ using ASPPatterns.Chap6.EventTickets.Model;
 
 namespace ASPPatterns.Chap6.EventTickets.Repository
 {
+    /// <summary>
+    /// 事件仓储库
+    /// </summary>
     public class EventRepository : IEventRepository 
     {
         private string connectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\EventTickets.mdf;Integrated Security=True;User Instance=True";

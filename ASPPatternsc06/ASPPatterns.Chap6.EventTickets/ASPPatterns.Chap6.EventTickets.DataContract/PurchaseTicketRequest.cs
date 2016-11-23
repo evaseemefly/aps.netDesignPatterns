@@ -10,9 +10,15 @@ namespace ASPPatterns.Chap6.EventTickets.DataContract
     [DataContract]
     public class PurchaseTicketRequest
     {
+        /// <summary>
+        /// 相互关联ID
+        /// </summary>
         [DataMember]
         public string CorrelationId { get; set; }
 
+        /// <summary>
+        /// 预约id
+        /// </summary>
         [DataMember]
         public string ReservationId { get; set; }
 

@@ -25,6 +25,7 @@ namespace ASPPatterns.Chap6.EventTickets.WebShop
         protected void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             TicketServiceFacade ticketService = new TicketServiceFacade(new TicketServiceClientProxy());
+            //购买已经预定的票
             TicketPresentation ticket = ticketService.PurchaseReservedTicket(Basket.GetBasket().Reservation.EventId, Basket.GetBasket().Reservation.ReservationId.ToString());   
             
             DisplayTicketReservations();
