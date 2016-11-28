@@ -14,6 +14,9 @@ namespace ASPPatterns.Chap7.Library.Model
 
         public string FirstName { get; set; }
 
+        /// <summary>
+        /// loans?
+        /// </summary>
         public virtual IList<Loan> Loans { get; set; }
 
         public void Return(Book book)
@@ -29,16 +32,31 @@ namespace ASPPatterns.Chap7.Library.Model
                 throw new ApplicationException(String.Format("Cannot return book '{0}'. Member '{1}' does not have this book on loan.", book.Id.ToString(), this.Id.ToString()));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
         private Loan FindCurrentOutstandingLoanFor(Book book)
         {
             return Loans.FirstOrDefault(l => (l.Book.Id == book.Id && l.HasNotBeenReturned()));            
         }
 
+        /// <summary>
+        /// 判断图书是否已经被借出
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
         public bool CanLoan(Book book)
         {
             return book.OnLoanTo == null;
         }
 
+        /// <summary>
+        /// 借书
+        /// </summary>
+        /// <param name="book"></param>
+        /// <returns></returns>
         public Loan Loan(Book book)
         {
             Loan loan = default(Loan);

@@ -22,7 +22,6 @@ namespace ASPPatterns.Chap7.ProxyPattern.Repository
         {
             get
             {
-                //HaveLoadedOrders为false时执行
                 if (!HaveLoadedOrders())
                 {
                     RetrieveOrders();
