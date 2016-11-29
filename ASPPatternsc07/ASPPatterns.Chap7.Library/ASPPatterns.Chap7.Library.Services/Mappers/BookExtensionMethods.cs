@@ -28,6 +28,11 @@ namespace ASPPatterns.Chap7.Library.Services.Mappers
                 return "";
         }
 
+        /// <summary>
+        /// 批量转换
+        /// </summary>
+        /// <param name="books"></param>
+        /// <returns></returns>
         public static IList<BookView> ConvertToBookViews(this IEnumerable<Book> books)
         {
             IList<BookView> bookViews = new List<BookView>();

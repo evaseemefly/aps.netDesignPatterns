@@ -33,7 +33,7 @@ namespace ASPPatterns.Chap7.Library.Model
         }
 
         /// <summary>
-        /// 
+        /// 返回指定book的待处理loan
         /// </summary>
         /// <param name="book"></param>
         /// <returns></returns>
