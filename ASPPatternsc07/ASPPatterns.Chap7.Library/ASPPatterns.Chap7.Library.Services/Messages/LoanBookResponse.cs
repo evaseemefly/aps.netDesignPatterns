@@ -8,6 +8,9 @@ namespace ASPPatterns.Chap7.Library.Services.Messages
 {
     public class LoanBookResponse : ResponseBase 
     {
+        /// <summary>
+        /// 借书视图
+        /// </summary>
         public LoanView loan { get; set; }
     }
 }

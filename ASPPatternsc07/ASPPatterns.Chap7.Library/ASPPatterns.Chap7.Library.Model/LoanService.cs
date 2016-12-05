@@ -7,6 +7,9 @@ using ASPPatterns.Chap7.Library.Infrastructure.UnitOfWork;
 
 namespace ASPPatterns.Chap7.Library.Model
 {
+    /// <summary>
+    /// 借书服务类
+    /// </summary>
     public class LoanService
     {        
         private IMemberRepository _memberRepository;

@@ -10,12 +10,18 @@ using ASPPatterns.Chap7.Library.Infrastructure.UnitOfWork;
 
 namespace ASPPatterns.Chap7.Library.Services
 {
+    /// <summary>
+    /// 图书馆服务
+    /// </summary>
     public class LibraryService
     {
         private IUnitOfWork _uow;        
         private IBookRepository _bookRepository;
         private IBookTitleRepository _bookTitleRepository;
         private IMemberRepository _memberRepository;
+        /// <summary>
+        /// 借书服务类
+        /// </summary>
         private LoanService _loanService; 
 
         public LibraryService(IBookTitleRepository bookTitleRepository,
@@ -97,10 +103,17 @@ namespace ASPPatterns.Chap7.Library.Services
             return response;
         }
 
+        /// <summary>
+        /// 借书
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public LoanBookResponse LoanBook(LoanBookRequest request)
         {
+            //借书的响应
             LoanBookResponse response = new LoanBookResponse();
 
+            //调用借书服务类借书
             Loan loan = _loanService.Loan(new Guid(request.MemberId), new Guid(request.CopyId));
 
             if (loan != null)
@@ -116,8 +129,14 @@ namespace ASPPatterns.Chap7.Library.Services
             return response;
         }
 
+        /// <summary>
+        /// 还书
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public ReturnBookResponse ReturnBook(ReturnBookRequest request)
         {
+            //还书的响应
             ReturnBookResponse response = new ReturnBookResponse();
 
             _loanService.Return(new Guid(request.CopyId));
