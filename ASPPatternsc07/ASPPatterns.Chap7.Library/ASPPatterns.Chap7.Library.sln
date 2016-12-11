@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap7.Library.Model", "ASPPatterns.Chap7.Library.Model\ASPPatterns.Chap7.Library.Model.csproj", "{EFC1FA98-BAB6-45F6-B8E6-0FB3D0A8422B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPPatterns.Chap7.Library.Repository.EF", "ASPPatterns.Chap7.Library.Repository.EF\ASPPatterns.Chap7.Library.Repository.EF.csproj", "{75E0A50D-090D-48C6-9A81-2AE702C7C197}"

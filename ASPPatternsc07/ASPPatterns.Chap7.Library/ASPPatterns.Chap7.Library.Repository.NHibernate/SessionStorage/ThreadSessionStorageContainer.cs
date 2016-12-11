@@ -12,6 +12,10 @@ namespace ASPPatterns.Chap7.Library.Repository.NHibernate.SessionStorage
     {
         private static readonly Hashtable _nhSessions = new Hashtable();
 
+        /// <summary>
+        /// 获取当前的会话
+        /// </summary>
+        /// <returns></returns>
         public ISession GetCurrentSession()
         {
             ISession nhSession = null;
@@ -22,6 +26,10 @@ namespace ASPPatterns.Chap7.Library.Repository.NHibernate.SessionStorage
             return nhSession;
         }
 
+        /// <summary>
+        /// 以当前的线程名称存储会话
+        /// </summary>
+        /// <param name="session"></param>
         public void Store(ISession session)
         {
             if (_nhSessions.Contains(GetThreadName()))
@@ -30,6 +38,10 @@ namespace ASPPatterns.Chap7.Library.Repository.NHibernate.SessionStorage
                 _nhSessions.Add(GetThreadName(), session);
         }
 
+        /// <summary>
+        /// 获取当前的线程名称
+        /// </summary>
+        /// <returns></returns>
         private static string GetThreadName()
         {
             return Thread.CurrentThread.Name;

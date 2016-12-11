@@ -7,6 +7,9 @@ using System.Web;
 
 namespace ASPPatterns.Chap7.Library.Repository.NHibernate.SessionStorage
 {
+    /// <summary>
+    /// 会话容器，利用Http项的集合存放NH的会话
+    /// </summary>
     public class HttpSessionContainer : ISessionStorageContainer 
     {
         private string _sessionKey = "NHSession";
