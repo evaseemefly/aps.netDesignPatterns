@@ -10,6 +10,10 @@ namespace ASPPatterns.Chap7.Library.Repository.NHibernate.SessionStorage
     {
         public static ISessionStorageContainer _nhSessionStorageContainer;
 
+        /// <summary>
+        /// 根据是否存在Http上下文创建对应的贮藏容器
+        /// </summary>
+        /// <returns></returns>
         public static ISessionStorageContainer GetStorageContainer()
         {
             if (_nhSessionStorageContainer == null)
