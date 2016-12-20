@@ -7,6 +7,9 @@ using ASPPatterns.Chap7.Library.Infrastructure.Query;
 
 namespace ASPPatterns.Chap7.Library.Repository.EF.QueryTranslators
 {
+    /// <summary>
+    /// 查询翻译
+    /// </summary>
     public abstract class QueryTranslator
     {
         public void CreateQueryAndObjectParameters(Query query, StringBuilder queryBuilder, IList<ObjectParameter> paraColl)

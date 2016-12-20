@@ -10,9 +10,14 @@ namespace ASPPatterns.Chap7.Library.Repository.EF.DataContextStorage
     {
         private string _dataContextKey = "DataContext";
         
+        /// <summary>
+        /// 获得数据上下文对象
+        /// </summary>
+        /// <returns></returns>
         public LibraryDataContext GetDataContext()
         {
             LibraryDataContext objectContext = null;
+
             if (HttpContext.Current.Items.Contains(_dataContextKey))
                 objectContext = (LibraryDataContext)HttpContext.Current.Items[_dataContextKey];
 

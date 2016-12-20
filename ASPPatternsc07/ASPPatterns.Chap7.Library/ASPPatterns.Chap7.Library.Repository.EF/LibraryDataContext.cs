@@ -8,6 +8,9 @@ using ASPPatterns.Chap7.Library.Model;
 
 namespace ASPPatterns.Chap7.Library.Repository.EF
 {
+    /// <summary>
+    /// 图书馆数据上下文对象
+    /// </summary>
     public class LibraryDataContext : ObjectContext
     {
         private ObjectSet<Member> _members;
