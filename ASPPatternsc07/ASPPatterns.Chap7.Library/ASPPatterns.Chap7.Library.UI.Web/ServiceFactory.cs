@@ -23,8 +23,11 @@ namespace ASPPatterns.Chap7.Library.UI.Web
             IBookTitleRepository bookTitleRepository;
             IMemberRepository memberRespository;
 
+            //读取配置文件中的持久性策略的配置节
             string persistenceStrategy = ConfigurationManager.AppSettings["PersistenceStrategy"];
 
+            //根据读取的配置节创建不同的持久化对象
+            //EF
             if (persistenceStrategy == "EF")
             {
                 uow = new Repository.EF.EFUnitOfWork();
@@ -32,6 +35,7 @@ namespace ASPPatterns.Chap7.Library.UI.Web
                 bookTitleRepository = new Repository.EF.Repositories.BookTitleRepository(uow);
                 memberRespository = new Repository.EF.Repositories.MemberRepository(uow);
             }
+            //NHibernate
             else
             {
                 uow = new Repository.NHibernate.NHUnitOfWork();
