@@ -9,7 +9,14 @@ namespace ASPPatterns.Chap8.IoC.Model
 {
     public class OrderService
     {
+        /// <summary>
+        /// 支付网关对象
+        /// </summary>
         private IPaymentGateway _paymentGateway;
+
+        /// <summary>
+        /// 快递服务
+        /// </summary>
         private IDespatchService _despatchService;
 
         public OrderService(IPaymentGateway paymentGateway, IDespatchService despatchService)
