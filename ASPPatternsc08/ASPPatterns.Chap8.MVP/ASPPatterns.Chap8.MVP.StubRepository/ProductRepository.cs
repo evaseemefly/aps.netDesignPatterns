@@ -6,6 +6,9 @@ using ASPPatterns.Chap8.MVP.Model;
 
 namespace ASPPatterns.Chap8.MVP.StubRepository
 {
+    /// <summary>
+    /// 产品仓储类
+    /// </summary>
     public class ProductRepository : IProductRepository
     {
         public IEnumerable<Product> FindAll()

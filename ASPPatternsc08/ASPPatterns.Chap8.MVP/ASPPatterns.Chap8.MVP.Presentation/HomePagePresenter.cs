@@ -6,6 +6,9 @@ using ASPPatterns.Chap8.MVP.Model;
 
 namespace ASPPatterns.Chap8.MVP.Presentation
 {
+    /// <summary>
+    /// 首页呈现器
+    /// </summary>
     public class HomePagePresenter : IHomePagePresenter
     {
         private IHomeView _view;

@@ -11,12 +11,19 @@ namespace ASPPatterns.Chap8.MVP.StubRepository
         private List<Product> _products;
         private List<Category> _categories;
 
+        /// <summary>
+        /// 初始化
+        /// 像商品及种类集合中添加对象
+        /// </summary>
         public DataContext()
         {
             _categories = new List<Category>();
 
+            //帽子类
             Category hatCategory = new Category { Id = 1, Name = "Hats" };
+            //手套类
             Category gloveCategory = new Category { Id = 2, Name = "Gloves" };
+            //围巾类
             Category scarfCategory = new Category { Id = 3, Name = "Scarfs" };
 
             _categories.Add(hatCategory);

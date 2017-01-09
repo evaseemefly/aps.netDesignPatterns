@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ASPPatterns.Chap8.MVP.Model
 {
+    /// <summary>
+    /// 种类
+    /// </summary>
     public class Category
     {
         public int Id { get; set; }
